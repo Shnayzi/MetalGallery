@@ -1,0 +1,453 @@
+/* reset css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --link-menu: #3f5d7d;
+  --link-hover: #1293e3;
+  --button: #3f5d7d;
+  --button-hover: #1293e3;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Nunito", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/*  */
+
+/* header */
+
+header {
+  padding: 20px 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header .logo {
+  width: 150px;
+}
+
+/*  */
+
+/* section Home */
+
+main #home {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 2%;
+}
+
+main #home .presentation {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 0.5;
+}
+
+main #home .presentation h1 {
+  margin-top: 5rem;
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+
+main #home .presentation p {
+  margin-bottom: 15px;
+  max-width: 550px;
+  font-size: 20px;
+}
+
+main #home .presentation a {
+  text-decoration: none;
+  color: white;
+  background-color: var(--button);
+  padding: 15px 40px;
+  border-radius: 5px;
+  transition: 0.8s;
+}
+
+main #home .presentation a:hover {
+  background-color: var(--button-hover);
+}
+
+main #home img {
+  width: 400px;
+}
+
+/*  */
+
+/* section about */
+
+h1.title-about {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 30px;
+}
+
+main #about {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  margin-top: 8.5rem;
+  margin-right: 2%;
+  margin-left: 2%;
+}
+
+main #about .introduction {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+main #about .introduction p {
+  width: 70%;
+  font-size: 20px;
+  margin-bottom: 1rem;
+  margin-right: 15px;
+}
+
+main #about .introduction img {
+  width: 20rem;
+  border-radius: 2px;
+}
+
+main #about .introduction .text-about {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+main #about .introduction-courses {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+main #about .introduction-courses h1 {
+  font-size: 30px;
+}
+
+main #about .introduction-courses p {
+  max-width: 450px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+main #about .courses {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-top: 3rem;
+}
+
+main #about .courses .card {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  margin-bottom: 5rem;
+  min-height: 200px;
+}
+
+main #about .courses .card:nth-of-type(2n - 1) {
+  flex-direction: row;
+}
+
+main #about .courses .card img {
+  max-width: 350px;
+  width: 100%;
+  height: 200px;
+  border-radius: 2px;
+}
+
+main #about .courses .card .card-name {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin-left: 20px;
+}
+
+main #about .courses .card .card-name h1 {
+  font-size: 25px;
+}
+
+main #about .courses .card .card-name p {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+/*  */
+
+/* section projects-gallery */
+
+main #projects-gallery {
+  margin-right: 2%;
+  margin-left: 2%;
+  margin-bottom: 20px;
+}
+
+main #projects-gallery .introduction-of-the-project-gallery {
+  margin-bottom: 20px;
+}
+
+main #projects-gallery .introduction-of-the-project-gallery h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+main #projects-gallery .introduction-of-the-project-gallery p {
+  font-size: 20px;
+}
+
+main #projects-gallery .collection-projects {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+main #projects-gallery .collection-projects .card {
+  border: 2px solid #3f5d7d;
+  padding: 10px;
+  margin-bottom: 15px;
+  width: 274px;
+}
+
+main #projects-gallery .collection-projects .card img {
+  max-width: 250px;
+  box-shadow: 2px 3px 5px #000;
+}
+
+main #projects-gallery .collection-projects .card h1 {
+  font-size: 18px;
+  padding: 10px 0;
+}
+
+/*  */
+
+/* section inspiration */
+
+main #inspiration {
+  margin-top: 2rem;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+main #inspiration img {
+  width: 20rem;
+  border-radius: 2px;
+}
+
+main #inspiration .content-inspiration {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row-reverse;
+}
+
+main #inspiration .content-inspiration .text-inpiration {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 35px;
+}
+
+main #inspiration .content-inspiration .text-inpiration h1 {
+  text-align: left;
+  margin-bottom: 3rem;
+}
+
+main #inspiration .content-inspiration .text-inpiration p {
+  max-width: 450px;
+  font-size: 20px;
+}
+
+main #inspiration .content-inspiration .text-inpiration a {
+  text-decoration: none;
+  padding: 10px 25px;
+  background-color: var(--button);
+  color: white;
+  border-radius: 5px;
+  margin-top: 25px;
+  transition: 0.8s;
+}
+
+main #inspiration .content-inspiration .text-inpiration a:hover {
+  background-color: var(--button-hover);
+}
+
+main #inspiration2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  display: none;
+  margin-top: 15rem;
+  margin-right: 2%;
+  margin-left: 2%;
+}
+
+main #inspiration2 img {
+  width: 15rem;
+  border-radius: 2px;
+}
+
+main #inspiration2 .text-inpiration2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 35px;
+}
+
+main #inspiration2 .text-inpiration2 h1 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+main #inspiration2 p {
+  max-width: 450px;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+main #inspiration2 a {
+  text-decoration: none;
+  padding: 10px 25px;
+  background-color: var(--button);
+  color: white;
+  border-radius: 5px;
+  margin-top: 25px;
+  transition: 0.8s;
+}
+
+main #inspiration2 .collection-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+main #inspiration2 a:hover {
+  background-color: var(--button-hover);
+}
+
+/*  */
+
+/* footer */
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+  margin-top: 25px;
+}
+
+footer p {
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+}
+
+footer p img {
+  width: 150px;
+  margin-left: 10px;
+}
+
+/*  */
+
+/* Responsive */
+
+@media screen and (max-width: 875px) {
+  header {
+    padding: 5px 2% 20px 2%;
+  }
+
+  main #home {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main #home .presentation {
+    align-items: center;
+    margin-bottom: 5rem;
+    text-align: center;
+  }
+
+  main #home img {
+    width: 300px;
+  }
+
+  main #about .courses .card:nth-of-type(2n - 1) {
+    flex-direction: column;
+  }
+
+  main #about .courses {
+    align-items: center;
+  }
+
+  main #about .courses .card {
+    flex-direction: column;
+    max-width: 250px;
+    margin-bottom: 15px;
+  }
+
+  main #about .courses .card img {
+    height: 150px;
+    margin-bottom: 10px;
+  }
+
+  main #inspiration {
+    margin-top: 50rem;
+    display: none;
+  }
+
+  main #inspiration2 {
+    display: block;
+  }
+
+  main #about .introduction {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main #about .introduction .text-about {
+    align-items: center;
+  }
+
+  main #projects-gallery {
+    margin-top: 10rem;
+  }
+
+  main #projects-gallery .collection-projects {
+    justify-content: center;
+  }
+
+  main #projects-gallery .collection-projects .card {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 345px) {
+  main #about .introduction img {
+    width: 15rem;
+  }
+}
+
+/*  */
